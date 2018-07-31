@@ -26,7 +26,7 @@ require 'includes/connection.php';
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="camera.jpg" alt="camera"/>
+                        <img src="images/camera.jpg" alt="camera"/>
                         <div class="caption">
                             <h2> SONY DSLR</h2>
                             <p>Price : Rs 50000.0 </p>
@@ -57,7 +57,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="camera1.jpeg" alt="camera"/>
+                        <img src="images/camera1.jpeg" alt="camera"/>
                         <div class="caption">
                             <h2> SONY DSLR</h2>
                             <p>Price : Rs 40000.0 </p>
@@ -88,7 +88,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="camera2.jpg" alt="camera"/>
+                        <img src="images/camera2.jpg" alt="camera"/>
                         <div class="caption">
                             <h2> Canon EOS</h2>
                             <p>Price : Rs 35000.0 </p>
@@ -119,7 +119,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="camera3.jpg" alt="camera"/>
+                        <img src="images/camera3.jpg" alt="camera"/>
                         <div class="caption">
                             <h2> Canon DSLR</h2>
                             <p>Price : Rs 80000.0 </p>
@@ -152,7 +152,7 @@ require 'includes/connection.php';
              <div class="row text-center">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="watch.jpg" alt="watch"/>
+                        <img src="images/watch.jpg" alt="watch"/>
                         <div class="caption">
                             <h2> Titan model #301</h2>
                             <p>Price : Rs 13000.0 </p>
@@ -183,7 +183,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="watch1.jpg" alt="watch"/>
+                        <img src="images/watch1.jpg" alt="watch"/>
                         <div class="caption">
                             <h2> Titan model #201</h2>
                             <p>Price : Rs 5000.0 </p>
@@ -214,7 +214,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="watch2.jpg" alt="watch"/>
+                        <img src="images/watch2.jpg" alt="watch"/>
                         <div class="caption">
                             <h2> Titan model #401</h2>
                             <p>Price : Rs 3000.0 </p>
@@ -245,7 +245,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="watch3.jpg" alt="watch"/>
+                        <img src="images/watch3.jpg" alt="watch"/>
                         <div class="caption">
                             <h2> Faber luba #111</h2>
                             <p>Price : Rs 18000.0 </p>
@@ -278,7 +278,7 @@ require 'includes/connection.php';
              <div class="row text-center">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="shirt.jpg" alt="shirt"/>
+                        <img src="images/shirt.jpg" alt="shirt"/>
                         <div class="caption">
                             <h2> H&W</h2>
                             <p>Price : Rs 1000.0 </p>
@@ -309,7 +309,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="shirt1.jpg" alt="shirt"/>
+                        <img src="images/shirt1.jpg" alt="shirt"/>
                         <div class="caption">
                             <h2> John Player</h2>
                             <p>Price : Rs 2000.0 </p>
@@ -340,7 +340,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="shirt2.jpg" alt="shirt"/>
+                        <img src="images/shirt2.jpg" alt="shirt"/>
                         <div class="caption">
                             <h2> HRX</h2>
                             <p>Price : Rs 3000.0 </p>
@@ -371,7 +371,7 @@ require 'includes/connection.php';
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="shirt3.jpg" alt="watch"/>
+                        <img src="images/shirt3.jpg" alt="watch"/>
                         <div class="caption">
                             <h2> Roadster </h2>
                             <p>Price : Rs 800.0 </p>

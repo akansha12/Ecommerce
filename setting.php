@@ -17,26 +17,30 @@ if(!isset($_SESSION['email']))
             <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
             <link type="text/css" rel="stylesheet" href="index.css"/>
     </head>
-    <body>
-        <?php
-       include 'includes/header.php';
-       ?>
-        <br><br><br>
-        <div class="container">
-            <h2> Change Password </h2>
-            <form method="POST" action="setting_script.php">
-            <div class="form-group">
-                <input type="password"  class="form-control" name="oldpassword" placeholder="Old password"/><br>
-                <input type="password"  class="form-control" name="newpassword" placeholder="New password"/><br>
-                <input type="password"  class="form-control" name="repassword" placeholder="Re-enter New password"/><br>
-                   
-                     <input type="submit" value="submit" class="btn btn-primary"><br><br>
+<body>
+        <?php include 'includes/header.php'; ?>
+        <div class="container-fluid" id="content">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4" id="settings-container">
+                    <h4>Change Password</h4>
+                    <form action="setting_script.php" method="POST">
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="oldpassword"  placeholder="Old Password" required = "true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="newpassword" placeholder="New Password" required = "true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="newpassword1"  placeholder="Re-type New Password" required = "true">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Change</button>
+                        <?php
+                        echo "<br><br><b class='red'>" . $_GET['error'] . "</b>";
+                        ?>
+                    </form>
+                </div>
             </div>
-        </form>
         </div>
-        
-         <?php
-        include 'includes/footer.php';
-        ?>
+        <?php include("includes/footer.php"); ?>
     </body>
 </html>

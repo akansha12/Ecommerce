@@ -32,7 +32,7 @@ if(!isset($_SESSION['email']))
                         $id = 0;
                         $user_id = $_SESSION['id'];
                         $query = "SELECT items.price AS Price, items.id, items.name AS Name FROM users_items JOIN items ON users_items.item_id = items.id WHERE users_items.user_id='$user_id' and status=1";
-                        $result = mysqli_query($con, $query)or die($mysqli_error($con));
+                        $result = mysqli_query($con, $query)or die(mysqli_error($con));
                         if (mysqli_num_rows($result) >= 1) {
                             ?>
                             <thead>
@@ -51,7 +51,7 @@ if(!isset($_SESSION['email']))
                                     echo "<tr><td>" . "#" . $row["id"] . "</td><td>" . $row["Name"] . "</td><td>Rs " . $row["Price"] . "</td><td><a href='cart_remove.php?id={$row['id']}' class='remove_item_link'> Remove</a></td></tr>";
                                 }
                                 $id = rtrim($id, ", ");
-                                echo "<tr><td></td><td><strong>Total</strong></td><td>Rs " . $sum . "</td><td><a href='success.php?itemsid=" . $id . "' class='btn btn-primary'>Confirm Order</a></td></tr>";
+                                echo "<tr><td></td><td><strong>Total</strong></td><td>Rs " . $sum . "</td><td><a href='success.php?item_id=" . $id . "' class='btn btn-primary'>Confirm Order</a></td></tr>";
                                 ?>
                             </tbody>
                             <?php

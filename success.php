@@ -2,9 +2,16 @@
 require 'includes/connection.php';
 if(!isset($_SESSION['email']))
 {
-    header('location.php');
+    header('location. index.php');
 }
 
+
+$user_id = $_SESSION['id'];
+$item_ids_string = $_GET['item_id'];
+
+//We will change the status of the items purchased by the user to 'Confirmed'
+$query = "UPDATE users_items SET status=0 WHERE user_id=" . $user_id . " AND item_id IN (" . $item_ids_string . ") and status=1";
+mysqli_query($con, $query) or die($mysqli_error($con));
 ?>
 <!DOCTYPE html>
 
@@ -18,12 +25,7 @@ if(!isset($_SESSION['email']))
             <link type="text/css" rel="stylesheet" href="index.css"/>
     </head>
     <body>
-        <?php
-        $item_id=$_GET['item_id'];
-        $user_id=$_SESSION['id'];
-        $update_status="update users_items set status='confirmed' where user_id='$user_id' && item_id='$item_id'";
-        $update_status_result= mysqli_query($con, $update_status);
-        ?>
+        
         <div style="margin-top: 200px; margin-bottom: 200px" class="container text-center">
             <p>Your order is confirmed.<br> Thank you for shopping with us. <br>Click<a href="products.php"> here</a> to purchase any other item</p>
         </div>
